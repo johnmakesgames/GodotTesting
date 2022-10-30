@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Red.tres" type="Material" id=1]
+[ext_resource path="res://PlayerControl.cs" type="Script" id=2]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="CSGBox" type="CSGBox" parent="."]
+transform = Transform( 14.6519, 0, 0, 0, 0.0917347, 0, 0, 0, 14.6519, -0.145849, -0.508178, 0.392452 )
+material_override = ExtResource( 1 )
+
+[node name="CSGSphere" type="CSGSphere" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0137808, 3.23437, -0.020545 )
+radial_segments = 30
+rings = 14
+script = ExtResource( 2 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.834204, 0.551457, 0, -0.551457, 0.834204, 0.767648, 7.78284, 10.9102 )
