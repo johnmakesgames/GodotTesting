@@ -16,6 +16,6 @@ public class PlayerControl : Node
   // Called every frame. 'delta' is the elapsed time since the previous frame.
   public override void _Process(float delta)
   {
-	//Output.Log("Test");
+	//GD.Print("Hello");
   }
 }
